@@ -1,0 +1,721 @@
+[
+    {
+        "id": "b6693eb0b6e2879b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "55aa6d3c07f63fac",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10cbabe3c1fa9efe",
+        "type": "ctrlx-config",
+        "name": "Core",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "7b877229.678964",
+        "type": "ctrlx-config",
+        "name": "localhost",
+        "hostname": "localhost",
+        "debug": false
+    },
+    {
+        "id": "d92c65a4.566478",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "Init",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "4e4829e3.eaeae8"
+            ]
+        ]
+    },
+    {
+        "id": "4e4829e3.eaeae8",
+        "type": "file in",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "filename": "/media/mmcblk1p1/Data.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "d42eaa86.c12c18"
+            ]
+        ]
+    },
+    {
+        "id": "d42eaa86.c12c18",
+        "type": "csv",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "spec": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": false,
+        "x": 570,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ac5b1c2.cbbd5e",
+        "type": "split",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "topic",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "5ed3ced8.9dd17"
+            ]
+        ]
+    },
+    {
+        "id": "5ed3ced8.9dd17",
+        "type": "switch",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "led1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "led2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "led3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "1fbafc85.1bae13"
+            ],
+            [
+                "eb8c629c.fac47"
+            ],
+            [
+                "81cb2400.d5dea8"
+            ]
+        ]
+    },
+    {
+        "id": "1fbafc85.1bae13",
+        "type": "function",
+        "z": "55aa6d3c07f63fac",
+        "name": "led1",
+        "func": "msg.name = msg.payload.name;\nmsg.color = msg.payload.color;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb8c629c.fac47",
+        "type": "function",
+        "z": "55aa6d3c07f63fac",
+        "name": "led2",
+        "func": "msg.name = msg.payload.name;\nmsg.color = msg.payload.color;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81cb2400.d5dea8",
+        "type": "function",
+        "z": "55aa6d3c07f63fac",
+        "name": "led3",
+        "func": "msg.name = msg.payload.name;\nmsg.color = msg.payload.color;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a514228b.20c53",
+        "type": "debug",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "beea38c19b63b481",
+        "type": "comment",
+        "z": "55aa6d3c07f63fac",
+        "name": "Read CSV from MicroSD",
+        "info": "",
+        "x": 170,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "916ad4b3ae478982",
+        "type": "comment",
+        "z": "55aa6d3c07f63fac",
+        "name": "Leftover from example",
+        "info": "",
+        "x": 160,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9a1a0c5dd22bd839",
+        "type": "ctrlx-datalayer-request",
+        "z": "55aa6d3c07f63fac",
+        "device": "10cbabe3c1fa9efe",
+        "method": "WRITE",
+        "path": "plc/app/Application/sym/PLC_PRG/TestArr",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 730,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "e7b0fbee86fe921e"
+            ]
+        ]
+    },
+    {
+        "id": "2",
+        "type": "template",
+        "z": "55aa6d3c07f63fac",
+        "name": "CSV Data",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Station,Month,Consumption\nRio,January,4000\nNew York,January,1000\nTokio,January,3000",
+        "x": 440,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3",
+        "type": "csv",
+        "z": "55aa6d3c07f63fac",
+        "name": "CSV In",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "4",
+                "5"
+            ]
+        ]
+    },
+    {
+        "id": "4",
+        "type": "debug",
+        "z": "55aa6d3c07f63fac",
+        "name": "Debug JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5",
+        "type": "change",
+        "z": "55aa6d3c07f63fac",
+        "name": "Add PartsProduced",
+        "rules": [
+            {
+                "t": "set",
+                "p": "columns",
+                "pt": "msg",
+                "to": "msg.columns & \", PartsProduced\"",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.PartsProduced",
+                "pt": "msg",
+                "to": "payload.Consumption / 10",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 620,
+        "wires": [
+            [
+                "6"
+            ]
+        ]
+    },
+    {
+        "id": "6",
+        "type": "csv",
+        "z": "55aa6d3c07f63fac",
+        "name": "CSV out",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 440,
+        "y": 620,
+        "wires": [
+            [
+                "7"
+            ]
+        ]
+    },
+    {
+        "id": "7",
+        "type": "debug",
+        "z": "55aa6d3c07f63fac",
+        "name": "Debug Final CSV",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3a3659061c991c31",
+        "type": "comment",
+        "z": "55aa6d3c07f63fac",
+        "name": "CSV data handling example from GitHub",
+        "info": "",
+        "x": 200,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e7b0fbee86fe921e",
+        "type": "file in",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "filename": "/media/mmcblk1p1/Data.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "3"
+            ]
+        ]
+    },
+    {
+        "id": "28f8391623dab7e7",
+        "type": "change",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload = msg.payload.map(row => parseFloat(row.value));",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d74255fb6b6945ca",
+        "type": "function",
+        "z": "55aa6d3c07f63fac",
+        "name": "function 1",
+        "func": "//msg.payload = msg.payload.map(row => parseFloat(row.col1));\n// let newPayload = [];\n\n// msg.payload.forEach((el) => {\n//     newPayload.push(el.toFixed(5))\n// });\n\nmsg.payload = {\n    \"type\": \"arfloat\",\n    \"value\" : msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "a514228b.20c53",
+                "9a1a0c5dd22bd839"
+            ]
+        ]
+    },
+    {
+        "id": "5499c255415ae3f2",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[10,20,30,40,50,60,70,80,90,100,110]",
+        "payloadType": "json",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "d74255fb6b6945ca"
+            ]
+        ]
+    },
+    {
+        "id": "a40a8906ed5215a4",
+        "type": "ctrlx-datalayer-request",
+        "z": "55aa6d3c07f63fac",
+        "device": "10cbabe3c1fa9efe",
+        "method": "READ",
+        "path": "plc/app/Application/sym/PLC_PRG/TestArr",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "73cfa6baef2ed483"
+            ]
+        ]
+    },
+    {
+        "id": "6464fa64f3bf3891",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "a40a8906ed5215a4"
+            ]
+        ]
+    },
+    {
+        "id": "73cfa6baef2ed483",
+        "type": "debug",
+        "z": "55aa6d3c07f63fac",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "34e15eef162a5c53",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "12345",
+        "payloadType": "json",
+        "x": 170,
+        "y": 860,
+        "wires": [
+            [
+                "15598547eae899ac"
+            ]
+        ]
+    },
+    {
+        "id": "15598547eae899ac",
+        "type": "function",
+        "z": "55aa6d3c07f63fac",
+        "name": "function 2",
+        "func": "//msg.payload = msg.payload.map(row => parseFloat(row.col1));\n// let newPayload = [];\n\n// msg.payload.forEach((el) => {\n//     newPayload.push(el.toFixed(5))\n// });\n\nmsg.payload = {\n    \"type\": \"float\",\n    \"value\" : msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 860,
+        "wires": [
+            [
+                "25fb58ac74a6aeec"
+            ]
+        ]
+    },
+    {
+        "id": "25fb58ac74a6aeec",
+        "type": "ctrlx-datalayer-request",
+        "z": "55aa6d3c07f63fac",
+        "device": "10cbabe3c1fa9efe",
+        "method": "WRITE",
+        "path": "plc/app/Application/sym/PLC_PRG/TestReal",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 740,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed4bd1c116eef9e1",
+        "type": "inject",
+        "z": "55aa6d3c07f63fac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 960,
+        "wires": [
+            [
+                "84001783bc3567bb"
+            ]
+        ]
+    },
+    {
+        "id": "84001783bc3567bb",
+        "type": "ctrlx-datalayer-request",
+        "z": "55aa6d3c07f63fac",
+        "device": "10cbabe3c1fa9efe",
+        "method": "READ",
+        "path": "plc/app/Application/sym/PLC_PRG/TestReal",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 510,
+        "y": 960,
+        "wires": [
+            [
+                "1cc3eb19fad433cf"
+            ]
+        ]
+    },
+    {
+        "id": "1cc3eb19fad433cf",
+        "type": "debug",
+        "z": "55aa6d3c07f63fac",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 960,
+        "wires": []
+    }
+]

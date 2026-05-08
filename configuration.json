@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/solutions/configuration.v1.schema.json",
+  "device": "ctrlX-OS",
+  "user": "boschrexroth",
+  "apps": [
+    {
+      "name": "bare",
+      "version": "1.0"
+    },
+    {
+      "name": "core24",
+      "version": "20260107"
+    },
+    {
+      "name": "ctrlx-node-red",
+      "title": "Node-RED",
+      "version": "4.6.3+4.1.8-ctrlx",
+      "appDirectories": [
+        {
+          "name": "node-RED",
+          "description": "Node-RED configuration (userDir)",
+          "icon": "bosch-ic-directory",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-arch02-hw",
+      "title": "Hardware Support",
+      "version": "4.6.0"
+    },
+    {
+      "name": "rexroth-arch02-kernel",
+      "title": "Realtime Kernel",
+      "version": "6.12.40-ctrlx-55"
+    },
+    {
+      "name": "rexroth-automationcore",
+      "title": "Automation Core",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "datalayer",
+          "description": "Data Layer",
+          "icon": "ctrlx-ic-data-layer",
+          "copyOnLoad": true
+        },
+        {
+          "name": "framework",
+          "description": "Framework",
+          "icon": "bosch-ic-cubes",
+          "copyOnLoad": true
+        },
+        {
+          "name": "scheduler",
+          "description": "Scheduler: Tasks, callables and timing settings",
+          "icon": "bosch-ic-cycletime-eighth",
+          "copyOnLoad": true
+        },
+        {
+          "name": "script",
+          "description": "Scripts configurations",
+          "icon": "bosch-ic-document-code-stack",
+          "copyOnLoad": true
+        },
+        {
+          "name": "scripts",
+          "description": "Scripts will be executed by script runner",
+          "icon": "bosch-ic-document-code-stack",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "synchronization",
+          "description": "Synchronization: Instances",
+          "icon": "bosch-ic-clock",
+          "copyOnLoad": true
+        },
+        {
+          "name": "trace",
+          "description": "Trace: Enabling states - messages, warnings, errors",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true
+        }
+      ]
+    },
+    {
+      "name": "rexroth-deviceadmin",
+      "title": "Device Admin",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "diagnosis",
+          "description": "Diagnosis settings",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true
+        },
+        {
+          "name": "remote-logging",
+          "description": "Log Management settings",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-ethercatmaster",
+      "title": "EtherCAT Master",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "comm.ethercat.master",
+          "description": "EtherCAT Master",
+          "icon": "ctrlx-ic-ethercat",
+          "writeProtected": true
+        }
+      ]
+    },
+    {
+      "name": "rexroth-motion",
+      "title": "Motion",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "axisprofile",
+          "description": "Motion: Axis profile configuration",
+          "icon": "bosch-ic-directory",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "cam-data",
+          "description": "Motion: Cam pools",
+          "icon": "bosch-ic-desktop-graph",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "motion",
+          "description": "Motion: Axes and kinematics configuration, coordinate systems and areas",
+          "icon": "ctrlx-ic-motion",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-plc",
+      "title": "PLC",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "plc",
+          "description": "PLC: Runtime and optional engineering data",
+          "icon": "ctrlx-ic-plc",
+          "copyOnLoad": true,
+          "writeProtected": true
+        },
+        {
+          "name": "plc/run/linux-gcc-aarch64/data",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "plc/run/linux-gcc-x64/data",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-setup",
+      "title": "Setup",
+      "version": "4.6.0"
+    },
+    {
+      "name": "rexroth-solutions",
+      "title": "Solutions",
+      "version": "4.6.1"
+    },
+    {
+      "name": "rexroth-version-guard",
+      "title": "Version Guard",
+      "version": "4.6.0"
+    },
+    {
+      "name": "sdk-py-webserver",
+      "title": "SDK Python Web Server",
+      "version": "1.0.0"
+    },
+    {
+      "name": "snapd",
+      "version": "2.72"
+    }
+  ]
+}

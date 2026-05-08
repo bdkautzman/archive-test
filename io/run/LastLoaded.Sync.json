@@ -1,0 +1,51 @@
+{
+  "IsSynced": false,
+  "SyncMode": 0,
+  "InSyncWithRuntime": false,
+  "ApplicationType": "io",
+  "Configuration": "appdata",
+  "Solution": "DefaultSolution",
+  "ControllerGuid": "562c088d-58cb-4c5d-b232-e5122ac6c4cb",
+  "LastChange": 639136704179754557,
+  "MachineName": "AT2-C-001CN",
+  "UserName": "KAB2HES",
+  "ProjectCompleteFilename": "C:\\Users\\KAB2HES\\Documents\\My ctrlX\\Untitled16.io.project",
+  "CompilerVersion": {
+    "Major": 3,
+    "Minor": 5,
+    "Build": 21,
+    "Revision": 50,
+    "MajorRevision": 0,
+    "MinorRevision": 50
+  },
+  "OwnVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 0,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "ProductAdditionalFolder": "Default",
+  "ProductProfileName": "ctrlX IO 4.6.0",
+  "ProductId": "ctrlx-io-engineering",
+  "ProductVersion": "4.6.0",
+  "ProductVersionText": "4.6.0",
+  "SyncModeSave": false,
+  "SyncModeDownload": false,
+  "SyncModeAsk": false,
+  "SyncAfterBootApplication": false,
+  "SyncOnOpen": false,
+  "UserMetaData": {
+    "AT2-C-001CN:KAB2HES": {
+      "MachineName": "AT2-C-001CN",
+      "UserName": "KAB2HES",
+      "ProjectCompleteFilename": "C:\\Users\\KAB2HES\\Documents\\My ctrlX\\Untitled16.io.project"
+    }
+  },
+  "CompileinfoChecksum": null,
+  "SyncDescription": false,
+  "DeviceId": "1001 0090",
+  "DeviceVersion": "4.6.0.0",
+  "UseIoHierachy": true
+}
