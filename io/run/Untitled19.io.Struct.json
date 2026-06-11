@@ -1,0 +1,1031 @@
+{
+  "Name": "Device",
+  "IconName": null,
+  "EcadId": "",
+  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+  "Type": 4096,
+  "Id": "1001 0090",
+  "ModuleId": null,
+  "Version": "4.6.0.0",
+  "ObjectGuid": "f606f9ba-8ac5-4258-b751-5e386759a574",
+  "SlotIndex": 0,
+  "Inputs": null,
+  "Outputs": null,
+  "StructuralItems": [
+    {
+      "Name": "ethercatmaster",
+      "IconName": null,
+      "EcadId": null,
+      "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+      "Type": 64,
+      "Id": "1001 0101",
+      "ModuleId": null,
+      "Version": "4.6.0.0",
+      "ObjectGuid": "38ed9e9a-ca70-4621-9a35-0e6faea09627",
+      "SlotIndex": 0,
+      "Inputs": null,
+      "Outputs": null,
+      "StructuralItems": [
+        {
+          "Name": "XC_EC_02",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_00242A1E00000100",
+          "ModuleId": null,
+          "Version": "Revision=16#00000100",
+          "ObjectGuid": "5df0c441-ab00-4f92-947e-0bcc439300df",
+          "SlotIndex": 0,
+          "Inputs": null,
+          "Outputs": null,
+          "StructuralItems": [
+            {
+              "Name": "XF71",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.ExplicitConnector",
+              "Type": 0,
+              "Id": null,
+              "ModuleId": null,
+              "Version": null,
+              "ObjectGuid": "f9ff1432-07af-41e3-90f0-932dba1fcb55",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": [
+                {
+                  "Name": "XC811201",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A1500000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "adf29c64-067f-4af3-9afe-1b0bf8118a70",
+                  "SlotIndex": 0,
+                  "Inputs": [
+                    {
+                      "Id": 33554434,
+                      "Name": "",
+                      "IecAddress": "%IW0",
+                      "Description": "UP Voltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554435,
+                      "Name": "",
+                      "IecAddress": "%IW2",
+                      "Description": "UP Current",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554436,
+                      "Name": "",
+                      "IecAddress": "%IW4",
+                      "Description": "UL Voltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554437,
+                      "Name": "",
+                      "IecAddress": "%IW6",
+                      "Description": "UL Current",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554438,
+                      "Name": "",
+                      "IecAddress": "%IX8.0",
+                      "Description": "UP Undervoltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554439,
+                      "Name": "",
+                      "IecAddress": "%IX8.1",
+                      "Description": "UP Overvoltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554440,
+                      "Name": "",
+                      "IecAddress": "%IX8.2",
+                      "Description": "UP Overcurrent",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554441,
+                      "Name": "",
+                      "IecAddress": "%IX8.3",
+                      "Description": "UL Undervoltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554442,
+                      "Name": "",
+                      "IecAddress": "%IX8.4",
+                      "Description": "UL Overvoltage",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554443,
+                      "Name": "",
+                      "IecAddress": "%IX8.5",
+                      "Description": "UL Overcurrent",
+                      "Descriptions": []
+                    }
+                  ],
+                  "Outputs": null,
+                  "StructuralItems": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "XB_EC_12",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_00242A0F00000100",
+          "ModuleId": null,
+          "Version": "Revision=16#00000100",
+          "ObjectGuid": "7d37b0ef-2327-4425-a695-628508c32cf9",
+          "SlotIndex": 0,
+          "Inputs": [
+            {
+              "Id": 33554434,
+              "Name": "",
+              "IecAddress": "%IW10",
+              "Description": "UP Voltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554435,
+              "Name": "",
+              "IecAddress": "%IW12",
+              "Description": "UP Current",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554436,
+              "Name": "",
+              "IecAddress": "%IW14",
+              "Description": "UL Voltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554437,
+              "Name": "",
+              "IecAddress": "%IW16",
+              "Description": "UL Current",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554438,
+              "Name": "",
+              "IecAddress": "%IX18.0",
+              "Description": "UP Undervoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554439,
+              "Name": "",
+              "IecAddress": "%IX18.1",
+              "Description": "UP Overvoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554440,
+              "Name": "",
+              "IecAddress": "%IX18.2",
+              "Description": "UP Overcurrent",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554441,
+              "Name": "",
+              "IecAddress": "%IX18.3",
+              "Description": "UL Undervoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554442,
+              "Name": "",
+              "IecAddress": "%IX18.4",
+              "Description": "UL Overvoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554443,
+              "Name": "",
+              "IecAddress": "%IX18.5",
+              "Description": "UL Overcurrent",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554444,
+              "Name": "",
+              "IecAddress": "%IX18.6",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554445,
+              "Name": "",
+              "IecAddress": "%IX18.7",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554446,
+              "Name": "",
+              "IecAddress": "%IX19.0",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554447,
+              "Name": "",
+              "IecAddress": "%IX19.1",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554448,
+              "Name": "",
+              "IecAddress": "%IX19.2",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554449,
+              "Name": "",
+              "IecAddress": "%IX19.3",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554450,
+              "Name": "",
+              "IecAddress": "%IX19.4",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554451,
+              "Name": "",
+              "IecAddress": "%IX19.5",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554452,
+              "Name": "",
+              "IecAddress": "%IX19.6",
+              "Description": "",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554453,
+              "Name": "",
+              "IecAddress": "%IX19.7",
+              "Description": "",
+              "Descriptions": []
+            }
+          ],
+          "Outputs": null,
+          "StructuralItems": [
+            {
+              "Name": "XF71",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.ExplicitConnector",
+              "Type": 0,
+              "Id": null,
+              "ModuleId": null,
+              "Version": null,
+              "ObjectGuid": "7dcf8ec5-e36e-4843-a0d3-4719a5a7f87c",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": [
+                {
+                  "Name": "XI312204",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A0C00000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "282eb0ee-df9a-4ffa-b7da-4357e1dbb97c",
+                  "SlotIndex": 0,
+                  "Inputs": [
+                    {
+                      "Id": 33554434,
+                      "Name": "",
+                      "IecAddress": "%IW20",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554435,
+                      "Name": "",
+                      "IecAddress": "%IX22.0",
+                      "Description": "Ch. 1 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554436,
+                      "Name": "",
+                      "IecAddress": "%IX22.1",
+                      "Description": "Ch. 1 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554437,
+                      "Name": "",
+                      "IecAddress": "%IX22.2",
+                      "Description": "Ch. 1 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554438,
+                      "Name": "",
+                      "IecAddress": "%IX22.3",
+                      "Description": "Ch. 1 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554439,
+                      "Name": "",
+                      "IecAddress": "%IX22.4",
+                      "Description": "Ch. 1 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554440,
+                      "Name": "",
+                      "IecAddress": "%IX22.5",
+                      "Description": "Ch. 1 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554451,
+                      "Name": "",
+                      "IecAddress": "%IW24",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554452,
+                      "Name": "",
+                      "IecAddress": "%IX26.0",
+                      "Description": "Ch. 2 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554453,
+                      "Name": "",
+                      "IecAddress": "%IX26.1",
+                      "Description": "Ch. 2 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554454,
+                      "Name": "",
+                      "IecAddress": "%IX26.2",
+                      "Description": "Ch. 2 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554455,
+                      "Name": "",
+                      "IecAddress": "%IX26.3",
+                      "Description": "Ch. 2 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554456,
+                      "Name": "",
+                      "IecAddress": "%IX26.4",
+                      "Description": "Ch. 2 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554457,
+                      "Name": "",
+                      "IecAddress": "%IX26.5",
+                      "Description": "Ch. 2 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554468,
+                      "Name": "",
+                      "IecAddress": "%IW28",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554469,
+                      "Name": "",
+                      "IecAddress": "%IX30.0",
+                      "Description": "Ch. 3 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554470,
+                      "Name": "",
+                      "IecAddress": "%IX30.1",
+                      "Description": "Ch. 3 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554471,
+                      "Name": "",
+                      "IecAddress": "%IX30.2",
+                      "Description": "Ch. 3 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554472,
+                      "Name": "",
+                      "IecAddress": "%IX30.3",
+                      "Description": "Ch. 3 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554473,
+                      "Name": "",
+                      "IecAddress": "%IX30.4",
+                      "Description": "Ch. 3 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554474,
+                      "Name": "",
+                      "IecAddress": "%IX30.5",
+                      "Description": "Ch. 3 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554485,
+                      "Name": "",
+                      "IecAddress": "%IW32",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554486,
+                      "Name": "",
+                      "IecAddress": "%IX34.0",
+                      "Description": "Ch. 4 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554487,
+                      "Name": "",
+                      "IecAddress": "%IX34.1",
+                      "Description": "Ch. 4 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554488,
+                      "Name": "",
+                      "IecAddress": "%IX34.2",
+                      "Description": "Ch. 4 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554489,
+                      "Name": "",
+                      "IecAddress": "%IX34.3",
+                      "Description": "Ch. 4 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554490,
+                      "Name": "",
+                      "IecAddress": "%IX34.4",
+                      "Description": "Ch. 4 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554491,
+                      "Name": "",
+                      "IecAddress": "%IX34.5",
+                      "Description": "Ch. 4 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554502,
+                      "Name": "",
+                      "IecAddress": "%IX36.0",
+                      "Description": "Periphery voltage ok",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554503,
+                      "Name": "",
+                      "IecAddress": "%IX36.1",
+                      "Description": "Error",
+                      "Descriptions": []
+                    }
+                  ],
+                  "Outputs": null,
+                  "StructuralItems": []
+                },
+                {
+                  "Name": "XI110116",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A0400000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "c0f4bdc7-39f5-43fb-8d25-d007727d852c",
+                  "SlotIndex": 0,
+                  "Inputs": [
+                    {
+                      "Id": 33554434,
+                      "Name": "",
+                      "IecAddress": "%IX38.0",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554435,
+                      "Name": "",
+                      "IecAddress": "%IX38.1",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554436,
+                      "Name": "",
+                      "IecAddress": "%IX38.2",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554437,
+                      "Name": "",
+                      "IecAddress": "%IX38.3",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554438,
+                      "Name": "",
+                      "IecAddress": "%IX38.4",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554439,
+                      "Name": "",
+                      "IecAddress": "%IX38.5",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554440,
+                      "Name": "",
+                      "IecAddress": "%IX38.6",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554441,
+                      "Name": "",
+                      "IecAddress": "%IX38.7",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554442,
+                      "Name": "",
+                      "IecAddress": "%IX39.0",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554443,
+                      "Name": "",
+                      "IecAddress": "%IX39.1",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554444,
+                      "Name": "",
+                      "IecAddress": "%IX39.2",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554445,
+                      "Name": "",
+                      "IecAddress": "%IX39.3",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554446,
+                      "Name": "",
+                      "IecAddress": "%IX39.4",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554447,
+                      "Name": "",
+                      "IecAddress": "%IX39.5",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554448,
+                      "Name": "",
+                      "IecAddress": "%IX39.6",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554449,
+                      "Name": "",
+                      "IecAddress": "%IX39.7",
+                      "Description": "Value",
+                      "Descriptions": []
+                    }
+                  ],
+                  "Outputs": null,
+                  "StructuralItems": []
+                },
+                {
+                  "Name": "XI211116",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A0200000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "2af1a909-1cc5-4ca1-b21b-f2fd55d1d1ae",
+                  "SlotIndex": 0,
+                  "Inputs": null,
+                  "Outputs": [
+                    {
+                      "Id": 16777218,
+                      "Name": "",
+                      "IecAddress": "%QX0.0",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777219,
+                      "Name": "",
+                      "IecAddress": "%QX0.1",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777220,
+                      "Name": "",
+                      "IecAddress": "%QX0.2",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777221,
+                      "Name": "",
+                      "IecAddress": "%QX0.3",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777222,
+                      "Name": "",
+                      "IecAddress": "%QX0.4",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777223,
+                      "Name": "",
+                      "IecAddress": "%QX0.5",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777224,
+                      "Name": "",
+                      "IecAddress": "%QX0.6",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777225,
+                      "Name": "",
+                      "IecAddress": "%QX0.7",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777226,
+                      "Name": "",
+                      "IecAddress": "%QX1.0",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777227,
+                      "Name": "",
+                      "IecAddress": "%QX1.1",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777228,
+                      "Name": "",
+                      "IecAddress": "%QX1.2",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777229,
+                      "Name": "",
+                      "IecAddress": "%QX1.3",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777230,
+                      "Name": "",
+                      "IecAddress": "%QX1.4",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777231,
+                      "Name": "",
+                      "IecAddress": "%QX1.5",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777232,
+                      "Name": "",
+                      "IecAddress": "%QX1.6",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777233,
+                      "Name": "",
+                      "IecAddress": "%QX1.7",
+                      "Description": "Value",
+                      "Descriptions": null
+                    }
+                  ],
+                  "StructuralItems": []
+                },
+                {
+                  "Name": "XI312204_1",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A0C00000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "fd21f03a-15f0-4db6-a0da-b7f892a7d22f",
+                  "SlotIndex": 0,
+                  "Inputs": [
+                    {
+                      "Id": 33554434,
+                      "Name": "",
+                      "IecAddress": "%IW40",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554435,
+                      "Name": "",
+                      "IecAddress": "%IX42.0",
+                      "Description": "Ch. 1 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554436,
+                      "Name": "",
+                      "IecAddress": "%IX42.1",
+                      "Description": "Ch. 1 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554437,
+                      "Name": "",
+                      "IecAddress": "%IX42.2",
+                      "Description": "Ch. 1 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554438,
+                      "Name": "",
+                      "IecAddress": "%IX42.3",
+                      "Description": "Ch. 1 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554439,
+                      "Name": "",
+                      "IecAddress": "%IX42.4",
+                      "Description": "Ch. 1 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554440,
+                      "Name": "",
+                      "IecAddress": "%IX42.5",
+                      "Description": "Ch. 1 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554451,
+                      "Name": "",
+                      "IecAddress": "%IW44",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554452,
+                      "Name": "",
+                      "IecAddress": "%IX46.0",
+                      "Description": "Ch. 2 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554453,
+                      "Name": "",
+                      "IecAddress": "%IX46.1",
+                      "Description": "Ch. 2 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554454,
+                      "Name": "",
+                      "IecAddress": "%IX46.2",
+                      "Description": "Ch. 2 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554455,
+                      "Name": "",
+                      "IecAddress": "%IX46.3",
+                      "Description": "Ch. 2 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554456,
+                      "Name": "",
+                      "IecAddress": "%IX46.4",
+                      "Description": "Ch. 2 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554457,
+                      "Name": "",
+                      "IecAddress": "%IX46.5",
+                      "Description": "Ch. 2 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554468,
+                      "Name": "",
+                      "IecAddress": "%IW48",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554469,
+                      "Name": "",
+                      "IecAddress": "%IX50.0",
+                      "Description": "Ch. 3 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554470,
+                      "Name": "",
+                      "IecAddress": "%IX50.1",
+                      "Description": "Ch. 3 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554471,
+                      "Name": "",
+                      "IecAddress": "%IX50.2",
+                      "Description": "Ch. 3 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554472,
+                      "Name": "",
+                      "IecAddress": "%IX50.3",
+                      "Description": "Ch. 3 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554473,
+                      "Name": "",
+                      "IecAddress": "%IX50.4",
+                      "Description": "Ch. 3 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554474,
+                      "Name": "",
+                      "IecAddress": "%IX50.5",
+                      "Description": "Ch. 3 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554485,
+                      "Name": "",
+                      "IecAddress": "%IW52",
+                      "Description": "Value",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554486,
+                      "Name": "",
+                      "IecAddress": "%IX54.0",
+                      "Description": "Ch. 4 Underrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554487,
+                      "Name": "",
+                      "IecAddress": "%IX54.1",
+                      "Description": "Ch. 4 Overrange",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554488,
+                      "Name": "",
+                      "IecAddress": "%IX54.2",
+                      "Description": "Ch. 4 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554489,
+                      "Name": "",
+                      "IecAddress": "%IX54.3",
+                      "Description": "Ch. 4 Limit 1",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554490,
+                      "Name": "",
+                      "IecAddress": "%IX54.4",
+                      "Description": "Ch. 4 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554491,
+                      "Name": "",
+                      "IecAddress": "%IX54.5",
+                      "Description": "Ch. 4 Limit 2",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554502,
+                      "Name": "",
+                      "IecAddress": "%IX56.0",
+                      "Description": "Periphery voltage ok",
+                      "Descriptions": []
+                    },
+                    {
+                      "Id": 33554503,
+                      "Name": "",
+                      "IecAddress": "%IX56.1",
+                      "Description": "Error",
+                      "Descriptions": []
+                    }
+                  ],
+                  "Outputs": null,
+                  "StructuralItems": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
