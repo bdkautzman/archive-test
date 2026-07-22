@@ -6,7 +6,7 @@
                 "view-store-position": false,
                 "view-show-grid": true,
                 "view-snap-grid": true,
-                "view-grid-size": 20,
+                "view-grid-size": "20",
                 "view-node-status": true,
                 "view-node-info-icon": true,
                 "view-node-show-label": true,
@@ -22,6 +22,28 @@
                     "json-view": false
                 }
             }
+        },
+        "nrlint": {
+            "rules": {
+                "align-to-grid": true,
+                "function-eslint": true,
+                "max-flow-size": true,
+                "no-duplicate-http-in-urls": true,
+                "no-loops": {
+                    "followLinkNodes": false
+                },
+                "no-overlapping-nodes": true,
+                "no-unconnected-http-nodes": true,
+                "no-unnamed-functions": {
+                    "allowDefaultNames": true
+                },
+                "no-unnamed-links": {
+                    "allowDefaultNames": true
+                }
+            },
+            "auto": true,
+            "autoDelay": null,
+            "lintDisabledFlows": true
         }
     }
 }

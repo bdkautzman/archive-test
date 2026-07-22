@@ -30,6 +30,67 @@
         "debug": false
     },
     {
+        "id": "9ed5836b0eac46a5",
+        "type": "file",
+        "z": "b6693eb0b6e2879b",
+        "name": "",
+        "filename": "/media/smb_192.168.1.77:_ctrlX-Share/NewFile.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "c6691bf247d4a70d"
+            ]
+        ]
+    },
+    {
+        "id": "88e9007f0ae611e6",
+        "type": "inject",
+        "z": "b6693eb0b6e2879b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Test Test Test",
+        "payloadType": "str",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "9ed5836b0eac46a5"
+            ]
+        ]
+    },
+    {
+        "id": "c6691bf247d4a70d",
+        "type": "debug",
+        "z": "b6693eb0b6e2879b",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
         "id": "d92c65a4.566478",
         "type": "inject",
         "z": "55aa6d3c07f63fac",
